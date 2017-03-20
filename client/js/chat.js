@@ -19,7 +19,7 @@ window.onload = function(){
 	}
 	window.onbeforeunload = function() {
 		eventObj.offline();
-		return confirm()
+		// return confirm()
 	}
 
 	//鼠标监听
