@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/reset.css">
+</head>
+<script src="libs/jquery.js"></script>
+<script src="libs/socket.io.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/socketEvent.js"></script>
+<script src="js/emoji.js"></script>
+<script src="js/chat.js"></script>
+
+<body>
+	<div class="wrap">
+		<i></i>
+		<div class="nickname">
+			<p>Get yourself a nickname</p>
+			<input type="text" id="nickname">
+			<input type="button" id="login" value="login">
+		</div>		
+	</div>
+	<div class="chatwrap">
+		<div class="msg">
+			<h3>
+				<b>ROOM</b>
+				<span class="person"><em class="num">0</em>人在线</span>
+				
+				<em class="myself"><i>yourname:</i><span class="name"></span></em>
+			</h3>
+			<div class="msgList">
+				
+			</div>
+			<div class="msgbtn">
+				<div class="tool">
+					<a class="emoji"><img src="image/emoji.png" alt=""></a>
+					<div class="face">
+						
+					</div>
+				</div>
+				<div contenteditable="true" id="mesbox"></div>
+				<input type="button" id="send" value="send">
+			</div>
+		</div>
+		<div class="users">
+			<h3>USERS</h3>
+			<ul>
+				
+			</ul>
+		</div>
+	</div>
+	<!-- <script src="js/chat.js"></script> -->
+</body>
+</html>
